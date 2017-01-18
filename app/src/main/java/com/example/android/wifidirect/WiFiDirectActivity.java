@@ -69,6 +69,7 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
         // add necessary intent values to be matched.
 
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
@@ -144,9 +145,8 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
                             Toast.LENGTH_SHORT).show();
                     return true;
                 }
-                SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
-                sendPostReqAsyncTask.execute();
-                /*final DeviceListFragment fragment = (DeviceListFragment) getFragmentManager()
+
+                final DeviceListFragment fragment = (DeviceListFragment) getFragmentManager()
                         .findFragmentById(R.id.frag_list);
                 fragment.onInitiateDiscovery();
                 manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {
@@ -163,7 +163,7 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-                return true;*/
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -266,39 +266,5 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
         }
 
     }
-    class SendPostReqAsyncTask extends AsyncTask<String,Void,String> {
-        @Override
-        protected void onPreExecute(){
-            if (!isWifiP2pEnabled) {
-                Toast.makeText(WiFiDirectActivity.this, R.string.p2p_off_warning,
-                        Toast.LENGTH_SHORT).show();
-            }
-        }
-        @Override
-        protected String doInBackground(String... params){
-            String temp="test";
-            final DeviceListFragment fragment = (DeviceListFragment) getFragmentManager()
-                    .findFragmentById(R.id.frag_list);
-            fragment.onInitiateDiscovery();
-            manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {
 
-                @Override
-                public void onSuccess() {
-                    Toast.makeText(WiFiDirectActivity.this, "Discovery Initiated",
-                            Toast.LENGTH_SHORT).show();
-                }
-
-                @Override
-                public void onFailure(int reasonCode) {
-                    Toast.makeText(WiFiDirectActivity.this, "Discovery Failed : " + reasonCode,
-                            Toast.LENGTH_SHORT).show();
-                }
-            });
-            return temp;
-        }
-        @Override
-        protected void onPostExecute(String result){
-
-        }
-    }
 }
