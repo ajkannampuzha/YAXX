@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jan 18 14:54:57 IST 2017
+#Wed Jan 18 16:16:36 IST 2017
 25.file=F\:\\android\\wifi-direct-demo-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex
 25.base=F\:\\android\\wifi-direct-demo-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
 22.set=ANDROID_RESOURCE
