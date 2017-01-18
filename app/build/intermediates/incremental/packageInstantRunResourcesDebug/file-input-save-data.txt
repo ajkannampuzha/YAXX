@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 17 16:47:14 IST 2017
+#Wed Jan 18 14:54:54 IST 2017
 8.set=ANDROID_RESOURCE
 1.base=F\:\\android\\wifi-direct-demo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 1.file=F\:\\android\\wifi-direct-demo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_action_discover.png
