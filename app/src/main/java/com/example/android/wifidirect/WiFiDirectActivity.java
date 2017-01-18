@@ -257,6 +257,7 @@ public class WiFiDirectActivity extends Activity implements ChannelListener, Dev
                         Toast.makeText(WiFiDirectActivity.this,
                                 "Connect abort request failed. Reason Code: " + reasonCode,
                                 Toast.LENGTH_SHORT).show();
+                        //test
                     }
                 });
             }
