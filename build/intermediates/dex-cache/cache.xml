@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="80569bf195621ea3c9e5fc4c5a50d3febd885b34">
+        sha1="8a6d9057cca0967855f61e91ae2ff2e9e9f42366">
         <dex dex="F:\android\wifi-direct-demo-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_896f2536179b60a68571deaac9f45cbd667aae76\classes.dex" />
     </item>
     <item
@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="050f678c090a8b493c21261977d6fa96821a9798">
+        sha1="927ff409d3b48f6d165b47a37c932ff219fb0ceb">
         <dex dex="F:\android\wifi-direct-demo-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bb29405705ffe82eb4deed74530474298e43e42b\classes.dex" />
     </item>
 
